@@ -1,5 +1,5 @@
 const computerPlay = function () {
-    const randomPlay = ['rock', 'papper', 'scissors'];
+    const randomPlay = ['rock', 'paper', 'scissor'];
     randomNumber = Math.floor(Math.random() * randomPlay.length);
     return randomPlay[randomNumber];
   };
@@ -26,10 +26,10 @@ const computerPlay = function () {
   const playRound = function (playerSelection, computerSelection) {
     if(playerSelection === 'rock') {
       switch(computerSelection) {
-        case 'papper': 
+        case 'paper': 
         return `You lost`
           break;
-        case 'scissors':
+        case 'scissor':
         return `You won`
           break;
         case 'rock':
@@ -37,12 +37,12 @@ const computerPlay = function () {
           break
       }
     }
-      else if(playerSelection === 'papper') {
+      else if(playerSelection === 'paper') {
         switch(computerSelection) {
-          case 'papper': 
+          case 'paper': 
           return `There was a tie`
             break;
-          case 'scissors':
+          case 'scissor':
             return `You lost`
             break;
           case 'rock':
@@ -52,10 +52,10 @@ const computerPlay = function () {
       }
       if(playerSelection === 'scissors') {
         switch(computerSelection) {
-            case 'papper': 
+            case 'paper': 
             return `You won`
               break;
-            case 'scissors':
+            case 'scissor':
             return `There was a tie`
               break;
             case 'rock':
